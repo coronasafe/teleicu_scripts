@@ -34,5 +34,5 @@ services:
       - roverr_rtsp_stream
       - teleicu_middleware
     ports:
-      - "8001:80"
+      - "8001:8001"
    
