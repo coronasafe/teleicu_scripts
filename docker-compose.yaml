@@ -2,16 +2,16 @@ version: '3'
 
 services:
 
-  # roverr_rtsp_stream:
+  # rtsptoweb:
   roverr_rtsp_stream:
     restart: always
-    image: roverr/rtsp-stream:2-management
+    image: ghcr.io/deepch/rtsptoweb:latest
     container_name: roverr_rtsp_stream
-    volumes:
-      - /teleicu/videos:/app/videos
+    #volumes:
+      #- /teleicu/videos:/app/videos
     ports:
-      - "8080:8080"
-      - "8081:80"
+      - "8080:8083"
+      #- "8081:80"
 
   # teleicu_middleware
   teleicu_middleware:
